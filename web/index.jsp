@@ -32,7 +32,7 @@
             <a href="manageMovie.html">manageMovie.html</a>
             <a href="registration.jsp">registration.html</a>
             <a href="registrationConfirmation.html">registrationConfirmation.html</a>
-            <a href="updateInformation.html">updateInformation.html</a>
+            <a href="updateInformation.jsp">updateInformation.html</a>
 
         </div>
 

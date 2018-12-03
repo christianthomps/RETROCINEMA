@@ -28,7 +28,7 @@ public class updateAccountServlet extends HttpServlet {
         String phonenumber = request.getParameter("phonenumber");
         String address = request.getParameter("street") + "/" + request.getParameter("city") + ", " + request.getParameter("state") + "/" + request.getParameter("zipcode");
 
-
+        //How to know which user
 
     }
 }

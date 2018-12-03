@@ -42,7 +42,7 @@
             <p>Number of tickets</p>
             <form action="selectSeatsServlet" method="post">
                 Senior
-                <select name="seniorTicketNo">
+                <select name="SeniorTicketNo">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -51,7 +51,7 @@
                     <option value="5">5</option>
                 </select>
                 Adult
-                <select name="adultTicketNo">
+                <select name="AdultTicketNo">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -60,7 +60,7 @@
                     <option value="5">5</option>
                 </select>
                 Under 18
-                <select name="minorTicketNo">
+                <select name="MinorTicketNo">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>

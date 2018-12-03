@@ -29,8 +29,8 @@
         <div class="theatre">
             <h1>Please select a seat for ${title}</h1>
               <form>
-                  <input id="" type="radio" value="">
-                  <label for=""></label>
+                  ${SeatsHTML}
+                  <button type="sumbmit">To order summary.</button>
               </form>
         </div>
         <p>

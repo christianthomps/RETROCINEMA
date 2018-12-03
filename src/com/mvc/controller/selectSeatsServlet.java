@@ -20,9 +20,9 @@ public class selectSeatsServlet extends HttpServlet {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        int SeniorTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("seniorTicketNo")));
-        int AdultTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("adultTicketNo")));
-        int MinorTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("minorTicketNo")));
+        int SeniorTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("SeniorTicketNo")));
+        int AdultTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("AdultTicketNo")));
+        int MinorTicketNo = Integer.parseInt(String.valueOf(request.getAttribute("MinorTicketNo")));
         String title = String.valueOf(request.getAttribute("title"));
 
         HttpSession session=request.getSession();
@@ -63,6 +63,7 @@ public class selectSeatsServlet extends HttpServlet {
         booking.setUserID(UID);
         request.setAttribute("Booking", booking);
 
+        request.setAttribute("SeatsHTML", SeatsHTML);
         request.setAttribute("SID",SID);
         request.setAttribute("seniorTicketNo", SeniorTicketNo);
         request.setAttribute("adultTicketNo", AdultTicketNo);
@@ -70,6 +71,9 @@ public class selectSeatsServlet extends HttpServlet {
         request.setAttribute("totalTickets", totalTickets);
         request.setAttribute("showTime", showTime);
         request.setAttribute("title", title);
+
+        RequestDispatcher rd = request.getRequestDispatcher("selectSeats.jsp");
+        rd.forward(request,response);
 
 
 

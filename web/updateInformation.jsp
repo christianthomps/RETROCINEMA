@@ -21,6 +21,7 @@
     </div>
     <div class="content content-text">
         <div class="contentBox">
+            <form method="post" action="updateAccountServlet">
             <table>
                 <tr>
                     <td>First Name <input type="text"/></td>
@@ -54,8 +55,9 @@
                     <td>Zip code <input type="text"/></td>
                 </tr>
             </table>
-            <button>Update</button>
+            <button type="submit">Update</button>
             <button>Cancel</button>
+            </form>
         </div>
     </div>
     <div id="footer">

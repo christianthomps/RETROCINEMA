@@ -23,11 +23,11 @@
     <div class="content">
         <div id="accountActionsBox">
 
-            <form action="updateInformation.html">
+            <form action="updateInformation.jsp">
                 <input class="accountButtons" type="submit" value="Update Account" />
             </form>
 
-            <form action="updateInformation.html">
+            <form action="updateInformation.jsp">
                 <input class="accountButtons" type="submit" value="Update Account" />
             </form>
 
